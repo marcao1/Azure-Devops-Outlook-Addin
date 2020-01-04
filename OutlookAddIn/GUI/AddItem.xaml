@@ -1,0 +1,30 @@
+﻿<UserControl x:Class="OutlookAddIn.GUI.AddItem"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:OutlookAddIn.GUI"
+             mc:Ignorable="d" 
+             Background="White"
+             d:DesignHeight="350" d:DesignWidth="450">
+    <Grid Margin="20">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="7*"/>
+            <ColumnDefinition Width="8*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="62*"/>
+            <RowDefinition Height="59*"/>
+            <RowDefinition Height="189*"/>
+        </Grid.RowDefinitions>
+
+        <Label Content="Typ of selected Item" FontSize="18" FontWeight="Bold"  Grid.Row="1" Grid.ColumnSpan="2" Grid.RowSpan="2"/>
+        <Label Content="Selected Board Column"  FontSize="18" FontWeight="Bold" Grid.Row="0" Grid.RowSpan="3" Grid.ColumnSpan="2"></Label>
+        <TextBox Grid.Row="2" VerticalAlignment="Top" Margin="10" Text="Title of Item" FontWeight="Bold" FontSize="18"></TextBox>
+
+        <Border CornerRadius="6" BorderBrush="Black" BorderThickness="1" Grid.Row="2" Grid.Column="1" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="4,0,0,0" Height="35" Width="185">
+            <Button Content="Add Item To Board" Background="LightGray" FontSize="19" FontWeight="Bold" Padding="5,2"  ></Button>
+        </Border>
+
+    </Grid>
+</UserControl>
